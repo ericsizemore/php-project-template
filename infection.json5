@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/infection/infection/master/resources/schema.json",
+    "source": {
+        "directories": [
+            "src"
+        ],
+        "excludes": [
+            "tests",
+            "vendor"
+        ]
+    },
+    "mutators": {
+        "@default": true
+    },
+    "timeout": 10,
+    "logs": {
+        "stryker": {
+            "report": "/.*?/"
+        },
+        "text": "php:\/\/stderr",
+        "github": true
+    },
+    "tmpDir": "build/logs",
+    "testFramework": "phpunit"
+}

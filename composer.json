@@ -1,0 +1,103 @@
+{
+    "name": "esi/php-project-template",
+    "description": "Simple template repository for PHP libraries/projects.",
+    "license": "MIT",
+    "type": "project",
+    "keywords": [
+        "ericsizemore",
+        "php",
+        "php-library",
+        "php-library-template",
+        "php-project",
+        "php-project-template"
+    ],
+    "authors": [
+        {
+            "name": "Eric Sizemore",
+            "email": "admin@secondversion.com",
+            "homepage": "https://www.secondversion.com"
+        }
+    ],
+    "homepage": "https://github.com/ericsizemore/php-project-template",
+    "support": {
+        "issues": "https://github.com/ericsizemore/php-project-template/issues",
+        "forum": "https://github.com/ericsizemore/php-project-template/discussions",
+        "source": "https://github.com/ericsizemore/php-project-template/tree/main",
+        "docs": "https://github.com/ericsizemore/php-project-template",
+        "rss": "https://github.com/ericsizemore/php-project-template/releases.atom",
+        "security": "https://github.com/ericsizemore/php-project-template/security/policy"
+    },
+    "funding": [
+        {
+            "type": "custom",
+            "url": "https://ko-fi.com/ericsizemore"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/ericsizemore"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "esi/phpunit-coverage-check": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "infection/infection": "^0",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^1.12",
+        "phpstan/phpstan-deprecation-rules": "^1.2",
+        "phpstan/phpstan-phpunit": "^1.4",
+        "phpstan/phpstan-strict-rules": "^1.6",
+        "phpunit/phpunit": "^11.4",
+        "psalm/plugin-phpunit": "^0.19.0",
+        "vimeo/psalm": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Esi\\PhpProjectTemplate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Esi\\PhpProjectTemplate\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "scripts": {
+        "analyze": [
+            "@clear-build",
+            "@composer validate",
+            "@phpunit",
+            "@code-coverage",
+            "@psalm:shepherd",
+            "@psalm:security",
+            "@phpstan",
+            "@infection"
+        ],
+        "clear-build": "rm -rf ./build/*",
+        "code-coverage": "vendor/bin/coverage-check build/logs/clover.xml 100",
+        "infection": "vendor/bin/infection --threads=max --configuration=infection.json5 --min-msi=100 --min-covered-msi=100",
+        "phpcs:check": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff",
+        "phpcs:fix": "vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+        "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon -vvv",
+        "phpunit": "vendor/bin/phpunit",
+        "phpunit:migrate": "@phpunit --migrate-configuration",
+        "psalm": "vendor/bin/psalm -c psalm.xml --no-cache --show-info=true",
+        "psalm:baseline": "@psalm --no-diff --set-baseline=psalm-baseline.xml",
+        "psalm:security": "@psalm --no-diff --taint-analysis",
+        "psalm:shepherd": "@psalm --no-diff --shepherd --stats"
+    }
+}

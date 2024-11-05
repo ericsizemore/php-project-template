@@ -1,0 +1,38 @@
+on:
+  push:
+    tags:
+      - "**"
+
+name: "Prepare Release"
+
+jobs:
+  publish-release:
+    name: "Publish Release"
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+
+      - name: "Determine tag"
+        run: echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: "Get latest release info"
+        id: query-release-info
+        uses: release-flow/keep-a-changelog-action@v3
+        with:
+           command: query
+           version: ${{ env.RELEASE_TAG }}
+
+      - name: "Create release"
+        uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ env.RELEASE_TAG }}
+          name: ${{ env.RELEASE_TAG }}
+          body: "${{ steps.query-release-info.outputs.release-notes }}"
