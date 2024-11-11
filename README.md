@@ -34,7 +34,7 @@ You can also [create a repository from this template](https://docs.github.com/en
 The [`continuous-integration.yml`](.github/workflows/continuous-integration.yml) workflow expects the project to exist on [Scrutinizer](https://scrutinizer-ci.com) so that it can upload coverage reports. 
 It also makes use of [CodeCov](https://about.codecov.io), so it will require a new [repository/action secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) named `CODECOV_TOKEN`. 
 
-[`Renovate`](https://github.com/apps/renovate) is used to handle automated updating of `composer` dependencies. A [`merge-me.yml`](.github/workflows/merge-me.yml) workflow is provided to automatically merge PR's created by Renovate. This requires `Allow auto-merge` to be enabled in repository settings, and a new [repository/action secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) named `MERGE_ME`.
+[`Renovate`](https://github.com/apps/renovate) is used to handle automated updating of `composer` dependencies. A [`-me.yml`](.github/workflows/-me.yml) workflow is provided to automatically  PR's created by Renovate. This requires `Allow auto-` to be enabled in repository settings, and a new [repository/action secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) named `MERGE_TOKEN`.
 
 ```bash
           # Create a token with repository permissions:
