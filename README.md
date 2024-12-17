@@ -13,11 +13,25 @@
 
 `ericsizemore/php-project-template` started as a template to be used for my own future repos/libraries, with the goal of eventually bringing my current repos to parity with this setup.
 
-This package can be used to create a basic PHP library package/repository, complete with a directory structure and starting files (i.e. README, LICENSE, issue templates, PHPUnit configuration, etc.) commonly found in PHP libraries.
+This package can be used to create a basic PHP library package/repository, complete with a directory structure and starting files (i.e., README, LICENSE, issue templates, PHPUnit configuration, etc.) commonly found in PHP libraries.
 
-> [!WARNING]
->
-> This project is not finished yet, work in progress.
+> [!IMPORTANT]
+> Once you create a new repository based on this template, or a project if via Composer, it is important
+> that you change all mention of 'esi/php-project-template' and 'ericsizemore/php-project-template' to 
+> your `vendor/library` and `github-username/repository` name. Obviously, this is also necessary for the 
+> `vendor\namespace` and filenames inside the `src` and `tests` folders. It is also important to setup and
+> modify workflows per [Workflow Setup](#workflow-setup).
+
+> [!NOTE]
+> Files that may need changed per the above `IMPORTANT` information: all files within the `.github` directory, `composer.json`, 
+> `$header` block in `.php-cs-fixer.dist.php`, `CONTRIBUTING.md`, `LICENSE`, `README.md`, and `SECURITY.md`.
+
+> [!NOTE]
+> The issue templates in `.github/ISSUE_TEMPLATE`, the pull request template at `.github/pull_request_template.md`, and the
+> Renovate config at `renovate.json` assume you have created labels for: `bug`, `dependency`, enhancement`, `fix`, `unverified`, 
+> and `verified`.
+
+---
 
 ## Installation
 
@@ -34,7 +48,7 @@ You can also [create a repository from this template](https://docs.github.com/en
 The [`continuous-integration.yml`](.github/workflows/continuous-integration.yml) workflow expects the project to exist on [Scrutinizer](https://scrutinizer-ci.com) so that it can upload coverage reports. 
 It also makes use of [CodeCov](https://about.codecov.io), so it will require a new [repository/action secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) named `CODECOV_TOKEN`. 
 
-[`Renovate`](https://github.com/apps/renovate) is used to handle automated updating of `composer` dependencies. A [`merge-me.yml`](.github/workflows/merge-me.yml) workflow is provided to automatically merge PR's created by Renovate. This requires `Allow auto-merge` to be enabled in repository settings, and a new [repository/action secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) named `MERGE_TOKEN`.
+[`Renovate`](https://github.com/apps/renovate) is used to handle automated updating of `composer` dependencies with a config file at `renovate.json`. A [`merge-me.yml`](.github/workflows/merge-me.yml) workflow is provided to automatically merge PR's created by Renovate. This requires `Allow auto-merge` to be enabled in repository settings, and a new [repository/action secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) named `MERGE_TOKEN`.
 
 ```bash
           # Create a token with repository permissions:
@@ -62,7 +76,11 @@ The `mutation-test` portion of the [`continuous-integration.yml`](.github/workfl
 
 - [Eric Sizemore](https://github.com/ericsizemore)
 - [All Contributors](https://github.com/ericsizemore/php-project-template/contributors)
-- Special thanks to [JetBrains](https://www.jetbrains.com/?from=) for their Licenses for Open Source Development
+- Special thanks to [JetBrains](https://www.jetbrains.com/?from=) for their Licenses for Open Source Development.
+
+### Available Tools
+
+See [Available Tools](./docs/available-tools.md).
 
 ### Contributing
 
