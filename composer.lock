@@ -2281,16 +2281,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "6.2.0",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jsonrainbow/json-schema.git",
-                "reference": "460c0a09407f4d0d47679476745c4185ff0f1961"
+                "reference": "dff04e3c7c11451a6b4e30709e17c44526ebff73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/460c0a09407f4d0d47679476745c4185ff0f1961",
-                "reference": "460c0a09407f4d0d47679476745c4185ff0f1961",
+                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/dff04e3c7c11451a6b4e30709e17c44526ebff73",
+                "reference": "dff04e3c7c11451a6b4e30709e17c44526ebff73",
                 "shasum": ""
             },
             "require": {
@@ -2351,9 +2351,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jsonrainbow/json-schema/issues",
-                "source": "https://github.com/jsonrainbow/json-schema/tree/6.2.0"
+                "source": "https://github.com/jsonrainbow/json-schema/tree/6.2.1"
             },
-            "time": "2025-02-26T20:58:15+00:00"
+            "time": "2025-03-06T21:27:10+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -7627,12 +7627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "26941e1c83f88722bfaf767a00bf11cfad94bd23"
+                "reference": "be92afa0733581f53247c1f4d01b60af12151bd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/26941e1c83f88722bfaf767a00bf11cfad94bd23",
-                "reference": "26941e1c83f88722bfaf767a00bf11cfad94bd23",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/be92afa0733581f53247c1f4d01b60af12151bd9",
+                "reference": "be92afa0733581f53247c1f4d01b60af12151bd9",
                 "shasum": ""
             },
             "require": {
@@ -7737,7 +7737,7 @@
                 "issues": "https://github.com/vimeo/psalm/issues",
                 "source": "https://github.com/vimeo/psalm"
             },
-            "time": "2025-03-01T13:35:54+00:00"
+            "time": "2025-03-03T21:21:57+00:00"
         },
         {
             "name": "webmozart/assert",
