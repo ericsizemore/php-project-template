@@ -4727,20 +4727,20 @@
         },
         {
             "name": "sanmai/later",
-            "version": "0.1.5",
+            "version": "0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/later.git",
-                "reference": "cf5164557d19930295892094996f049ea12ba14d"
+                "reference": "72a82d783864bca90412d8a26c1878f8981fee97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/later/zipball/cf5164557d19930295892094996f049ea12ba14d",
-                "reference": "cf5164557d19930295892094996f049ea12ba14d",
+                "url": "https://api.github.com/repos/sanmai/later/zipball/72a82d783864bca90412d8a26c1878f8981fee97",
+                "reference": "72a82d783864bca90412d8a26c1878f8981fee97",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4"
+                "php": ">=8.2"
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.8",
@@ -4779,7 +4779,7 @@
             "description": "Later: deferred wrapper object",
             "support": {
                 "issues": "https://github.com/sanmai/later/issues",
-                "source": "https://github.com/sanmai/later/tree/0.1.5"
+                "source": "https://github.com/sanmai/later/tree/0.1.7"
             },
             "funding": [
                 {
@@ -4787,7 +4787,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-06T02:36:26+00:00"
+            "time": "2025-05-11T01:48:00+00:00"
         },
         {
             "name": "sanmai/pipeline",
@@ -7452,12 +7452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "02b64e98082db34b325814d4cc98fb65b0908721"
+                "reference": "8506dfcb5657c5d649d6a4b165cc0ba8cde8a597"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/02b64e98082db34b325814d4cc98fb65b0908721",
-                "reference": "02b64e98082db34b325814d4cc98fb65b0908721",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/8506dfcb5657c5d649d6a4b165cc0ba8cde8a597",
+                "reference": "8506dfcb5657c5d649d6a4b165cc0ba8cde8a597",
                 "shasum": ""
             },
             "require": {
@@ -7562,7 +7562,7 @@
                 "issues": "https://github.com/vimeo/psalm/issues",
                 "source": "https://github.com/vimeo/psalm"
             },
-            "time": "2025-05-04T15:30:06+00:00"
+            "time": "2025-05-06T08:26:41+00:00"
         },
         {
             "name": "webmozart/assert",
