@@ -38,21 +38,21 @@
         }
     ],
     "require": {
-        "php": ">=8.2"
+        "php": ">=8.3"
     },
     "require-dev": {
-        "esi/phpunit-coverage-check": "^2.0",
-        "friendsofphp/php-cs-fixer": "^3.65",
-        "infection/infection": "^0",
+        "esi/phpunit-coverage-check": "^3.0",
+        "friendsofphp/php-cs-fixer": "^3.85",
+        "infection/infection": "^0.31",
         "phpstan/extension-installer": "^1.4",
-        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan": "^2.1",
         "phpstan/phpstan-deprecation-rules": "^2.0",
         "phpstan/phpstan-phpunit": "^2.0",
         "phpstan/phpstan-strict-rules": "^2.0",
-        "phpunit/phpunit": "^11.5",
-        "psalm/plugin-phpunit": "^0.19.0",
-        "rector/rector": "^2.0",
-        "vimeo/psalm": "dev-master"
+        "phpunit/phpunit": "^12.3",
+        "psalm/plugin-phpunit": "^0.19",
+        "rector/rector": "^2.1",
+        "vimeo/psalm": "^6.13"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -74,7 +74,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "1.x-dev"
+            "dev-main": "2.x-dev"
         }
     },
     "scripts": {
@@ -98,6 +98,7 @@
         "phpunit:migrate": "@phpunit --migrate-configuration",
         "psalm": "vendor/bin/psalm -c psalm.xml --no-cache --show-info=true",
         "psalm:baseline": "@psalm --no-diff --set-baseline=psalm-baseline.xml",
+        "psalm:ci": "@psalm:security --shepherd --report=results.sarif",
         "psalm:security": "@psalm --no-diff --taint-analysis",
         "psalm:shepherd": "@psalm --no-diff --shepherd --stats",
         "refactor:check": "@refactor:fix --dry-run",

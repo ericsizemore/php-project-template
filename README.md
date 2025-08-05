@@ -18,9 +18,10 @@ This package can be used to create a basic PHP library package/repository, compl
 > [!IMPORTANT]
 > Once you create a new repository based on this template, or a project if via Composer, it is important
 > that you change all mention of 'esi/php-project-template' and 'ericsizemore/php-project-template' to 
-> your `vendor/library` and `github-username/repository` name. Obviously, this is also necessary for the 
-> `vendor\namespace` and filenames inside the `src` and `tests` folders. It is also important to setup and
-> modify workflows per [Workflow Setup](#workflow-setup).
+> your `vendor/library` and `github-username/repository` name.
+> 
+> Obviously, this is also necessary for the `vendor\namespace` and filenames inside the `src` and `tests` folders. 
+> It is also important to setup and modify workflows per [Workflow Setup](#workflow-setup).
 
 > [!NOTE]
 > Files that may need changed per the above `IMPORTANT` information: all files within the `.github` directory, `composer.json`, 
@@ -31,7 +32,10 @@ This package can be used to create a basic PHP library package/repository, compl
 > Renovate config at `renovate.json` assume you have created labels for: `bug`, `dependency`, enhancement`, `fix`, `unverified`, 
 > and `verified`.
 
----
+> [!NOTE]
+> You should replace the contents of the included `.gitattributes` file with the contents of `.gitattributes.template` 
+> for proper export ignores, etc.
+
 
 ## Installation
 
@@ -42,6 +46,8 @@ $ composer create-project ericsizemore/php-project-template YOUR-PROJECT-NAME
 ```
 
 You can also [create a repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) on GitHub.
+
+**If you still need PHP 8.2 support, install v1.0.x of this project.**
 
 ### Workflow Setup
 
@@ -70,13 +76,13 @@ The `mutation-test` portion of the [`continuous-integration.yml`](.github/workfl
 
 ### Requirements
 
-* PHP >= 8.2
+* PHP >= 8.3
 
 ### Credits
 
 - [Eric Sizemore](https://github.com/ericsizemore)
 - [All Contributors](https://github.com/ericsizemore/php-project-template/contributors)
-- Special thanks to [JetBrains](https://www.jetbrains.com/?from=) for their Licenses for Open Source Development.
+- Special thanks to [JetBrains](https://www.jetbrains.com/?from=esi-php-project-template) for their Licenses for Open Source Development.
 
 ### Available Tools
 

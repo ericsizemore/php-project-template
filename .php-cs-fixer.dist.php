@@ -18,7 +18,7 @@ $config
     ->setRules([
         '@PER-CS'                 => true,
         '@PSR12'                  => true,
-        '@PHP82Migration'         => true,
+        '@PHP83Migration'         => true,
         'align_multiline_comment' => true,
         'array_syntax'            => [
             'syntax' => 'short',

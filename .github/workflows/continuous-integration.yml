@@ -9,12 +9,12 @@ on:
 
 # Cancels all previous workflow runs for the same branch that have not yet completed.
 concurrency:
-  # The concurrency group contains the workflow name and the branch name.
+  # The concurrency group contains the workflow name, and the branch name.
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
-  COMPOSER_ROOT_VERSION: "1.99.99"
+  COMPOSER_ROOT_VERSION: "2.99.99"
 
 jobs:
   phpstan:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.2', '8.3' ]
+        php: [ '8.3', '8.4' ]
     steps:
       - uses: actions/checkout@v4
 
@@ -50,13 +50,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: "Psalm Analysis"
-        uses: docker://vimeo/psalm-github-actions:latest
+      - name: "Install PHP 8.3"
+        uses: shivammathur/setup-php@master
         with:
-          args: --shepherd
-          composer_require_dev: true
-          security_analysis: true
-          report_file: results.sarif
+          php-version: 8.3
+          extensions: mbstring
+          coverage: none
+
+      - name: "Validate composer.json and composer.lock"
+        run: composer validate --strict
+
+      - name: "Setup Composer, install dependencies"
+        uses: ramsey/composer-install@v3
+        with:
+          composer-options: "--prefer-dist --optimize-autoloader"
+          require-lock-file: "true"
+
+      - name: "Psalm Analysis"
+        run: composer run-script psalm:ci
 
       - name: "Upload Security Analysis results to GitHub"
         uses: github/codeql-action/upload-sarif@v3
@@ -68,7 +79,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.2', '8.3' ]
+        php: [ '8.3', '8.4' ]
     steps:
       - uses: actions/checkout@v4
 
@@ -107,7 +118,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.2', '8.3' ]
+        php: [ '8.3', '8.4' ]
     steps:
       - uses: actions/checkout@v4
         with:

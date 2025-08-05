@@ -24,7 +24,7 @@ return RectorConfig::configure()
         PreferPHPUnitThisCallRector::class,
     ])
     ->withPhpSets(
-        php82: true
+        php83: true
     )
     ->withPreparedSets(
         deadCode: true,
