@@ -82,7 +82,6 @@ The `mutation-test` portion of the [`continuous-integration.yml`](.github/workfl
 
 - [Eric Sizemore](https://github.com/ericsizemore)
 - [All Contributors](https://github.com/ericsizemore/php-project-template/contributors)
-- Special thanks to [JetBrains](https://www.jetbrains.com/?from=esi-php-project-template) for their Licenses for Open Source Development.
 
 ### Available Tools
 
