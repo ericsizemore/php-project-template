@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [Unreleased]
+
+### Changed
+
+  * Add PHP 8.5 support (mainly testing with workflows).
+  * For dev dependencies, support PHPUnit 13.
+
+
 ## [2.0.0] - 2025-08-05
 
 ### Changed

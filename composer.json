@@ -41,18 +41,18 @@
         "php": ">=8.3"
     },
     "require-dev": {
-        "esi/phpunit-coverage-check": "^3.0",
-        "friendsofphp/php-cs-fixer": "^3.89",
+        "esi/phpunit-coverage-check": "^3.1",
+        "friendsofphp/php-cs-fixer": "^3.94",
         "infection/infection": "^0.32",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan": "^2.1",
         "phpstan/phpstan-deprecation-rules": "^2.0",
         "phpstan/phpstan-phpunit": "^2.0",
         "phpstan/phpstan-strict-rules": "^2.0",
-        "phpunit/phpunit": "^12.4",
+        "phpunit/phpunit": "^12.5 || ^13",
         "psalm/plugin-phpunit": "^0.19",
-        "rector/rector": "^2.2",
-        "vimeo/psalm": "^6.13"
+        "rector/rector": "^2.3",
+        "vimeo/psalm": "^6.15"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
