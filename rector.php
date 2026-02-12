@@ -39,7 +39,6 @@ return RectorConfig::configure()
         naming: true,
         instanceOf: true,
         earlyReturn: true,
-        strictBooleans: true,
         carbon: false,
         rectorPreset: true,
         phpunitCodeQuality: true,
