@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [3.0.1] - 2026-02-27
+
+### Changed
+
+  * Fix `.scrutinizer.yml` config.
+
+
 ## [3.0.0] - 2026-02-27
 
 ### Changed
@@ -57,6 +64,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   * Initial release.
 
 [unreleased]: https://github.com/ericsizemore/php-project-template/tree/main
+[3.0.1]: https://github.com/ericsizemore/php-project-template/releases/tag/v3.0.1
+[3.0.0]: https://github.com/ericsizemore/php-project-template/releases/tag/v3.0.0
 [2.0.1]: https://github.com/ericsizemore/php-project-template/releases/tag/v2.0.1
 [2.0.0]: https://github.com/ericsizemore/php-project-template/releases/tag/v2.0.0
 [1.1.0]: https://github.com/ericsizemore/php-project-template/releases/tag/v1.1.0
