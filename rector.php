@@ -27,7 +27,7 @@ return RectorConfig::configure()
         PreferPHPUnitThisCallRector::class,
     ])
     ->withPhpSets(
-        php83: true
+        php84: true
     )
     ->withPhpVersion(PhpVersion::PHP_10)
     ->withPreparedSets(

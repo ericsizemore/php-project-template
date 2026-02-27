@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  COMPOSER_ROOT_VERSION: "2.99.99"
+  COMPOSER_ROOT_VERSION: "3.99.99"
 
 jobs:
   phpstan:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.3', '8.4', '8.5' ]
+        php: [ '8.4', '8.5' ]
     steps:
       - uses: actions/checkout@v6
 
@@ -51,10 +51,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: "Install PHP 8.3"
+      - name: "Install PHP 8.4"
         uses: shivammathur/setup-php@master
         with:
-          php-version: 8.3
+          php-version: 8.4
           extensions: mbstring
           coverage: none
 
@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.3', '8.4', '8.5' ]
+        php: [ '8.4', '8.5' ]
     steps:
       - uses: actions/checkout@v6
 
@@ -121,7 +121,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: [ '8.3', '8.4', '8.5' ]
+        php: [ '8.4', '8.5' ]
     steps:
       - uses: actions/checkout@v6
         with:

@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [3.0.0] - 2026-02-27
+
+### Changed
+
+  * Minimum PHP version bumped to 8.4.
+  * Minimum dev dependency versions updated:
+    * PHPUnit ^13.0
+
+
 ## [2.0.1] - 2026-02-12
 
 ### Changed

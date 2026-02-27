@@ -26,6 +26,6 @@ final class PhpProjectTemplateTest extends TestCase
 {
     public function testFoo(): void
     {
-        self::assertSame('bar', (new PhpProjectTemplate())->foo());
+        self::assertSame('bar', new PhpProjectTemplate()->foo());
     }
 }

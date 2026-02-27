@@ -29,7 +29,7 @@ This package can be used to create a basic PHP library package/repository, compl
 
 > [!NOTE]
 > The issue templates in `.github/ISSUE_TEMPLATE`, the pull request template at `.github/pull_request_template.md`, and the
-> Renovate config at `renovate.json` assume you have created labels for: `bug`, `dependency`, enhancement`, `fix`, `unverified`, 
+> Renovate config at `renovate.json` assume you have created labels for: `bug`, `dependency`, `enhancement`, `fix`, `unverified`, 
 > and `verified`.
 
 > [!NOTE]
@@ -47,7 +47,16 @@ $ composer create-project ericsizemore/php-project-template YOUR-PROJECT-NAME
 
 You can also [create a repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) on GitHub.
 
-**If you still need PHP 8.2 support, install v1.0.x of this project.**
+#### PHP Version Support
+
+The following table shows the *minimum* PHP requirement needed for each version of this project template.
+
+  | PHP Version       | Template Version |
+|-------------------|------------------|
+| PHP 8.4 (current) | 3.x (current)    |
+| PHP 8.3           | 2.x              |
+| PHP 8.2           | 1.x              |
+
 
 ### Workflow Setup
 
@@ -76,7 +85,7 @@ The `mutation-test` portion of the [`continuous-integration.yml`](.github/workfl
 
 ### Requirements
 
-* PHP >= 8.3
+* PHP >= 8.4
 
 ### Credits
 
