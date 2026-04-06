@@ -50,7 +50,7 @@
         "phpstan/phpstan-phpunit": "^2.0",
         "phpstan/phpstan-strict-rules": "^2.0",
         "phpunit/phpunit": "^13",
-        "psalm/plugin-phpunit": "^0.19",
+        "psalm/plugin-phpunit": "^0.20",
         "rector/rector": "^2.3",
         "vimeo/psalm": "^6.15"
     },
