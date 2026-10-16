@@ -16,9 +16,13 @@ namespace Esi\PhpProjectTemplate;
 
 /**
  * @see Tests\PhpProjectTemplateTest
+ * @psalm-immutable
  */
 final class PhpProjectTemplate
 {
+    /**
+     * @psalm-pure
+     */
     public function foo(): string
     {
         return 'bar';

@@ -3,7 +3,7 @@
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="vendor/autoload.php"
          cacheDirectory="build/phpunit/cache"
-         executionOrder="depends,defects"
+         executionOrder="defects"
          requireCoverageMetadata="true"
          beStrictAboutCoverageMetadata="true"
          beStrictAboutOutputDuringTests="true"
@@ -13,11 +13,12 @@
          displayDetailsOnTestsThatTriggerWarnings="true"
          colors="true"
          failOnRisky="true"
-         failOnWarning="true">
+         failOnWarning="true"
+         resolveDependencies="true">
     <testsuites>
-        <testsuite name="default">
-            <directory>tests</directory>
-        </testsuite>
+      <testsuite name="default">
+        <directory>tests</directory>
+      </testsuite>
     </testsuites>
     <source restrictNotices="true" restrictWarnings="true" ignoreIndirectDeprecations="true">
         <include>
