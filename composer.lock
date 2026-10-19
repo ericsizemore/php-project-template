@@ -1451,12 +1451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ericsizemore/phpunit-coverage-check.git",
-                "reference": "fcbc58b54e30c3d85c82356ad13a9c48dfa1c87b"
+                "reference": "2284720f1e80724db90f1c376476e63d154ce462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ericsizemore/phpunit-coverage-check/zipball/fcbc58b54e30c3d85c82356ad13a9c48dfa1c87b",
-                "reference": "fcbc58b54e30c3d85c82356ad13a9c48dfa1c87b",
+                "url": "https://api.github.com/repos/ericsizemore/phpunit-coverage-check/zipball/2284720f1e80724db90f1c376476e63d154ce462",
+                "reference": "2284720f1e80724db90f1c376476e63d154ce462",
                 "shasum": ""
             },
             "require": {
@@ -1544,7 +1544,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-12T01:10:00+00:00"
+            "time": "2026-10-19T01:17:49+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -2312,20 +2312,21 @@
         },
         {
             "name": "league/uri",
-            "version": "7.8.1",
+            "version": "7.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri.git",
-                "reference": "08cf38e3924d4f56238125547b5720496fac8fd4"
+                "reference": "fcc872a3d872aa13f935e0cd1887b9abb06da07f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/08cf38e3924d4f56238125547b5720496fac8fd4",
-                "reference": "08cf38e3924d4f56238125547b5720496fac8fd4",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/fcc872a3d872aa13f935e0cd1887b9abb06da07f",
+                "reference": "fcc872a3d872aa13f935e0cd1887b9abb06da07f",
                 "shasum": ""
             },
             "require": {
-                "league/uri-interfaces": "^7.8.1",
+                "ext-mbstring": "*",
+                "league/uri-interfaces": "^7.9.0",
                 "php": "^8.1",
                 "psr/http-factory": "^1"
             },
@@ -2398,7 +2399,7 @@
                 "docs": "https://uri.thephpleague.com",
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri-src/issues",
-                "source": "https://github.com/thephpleague/uri/tree/7.8.1"
+                "source": "https://github.com/thephpleague/uri/tree/7.9.0"
             },
             "funding": [
                 {
@@ -2406,20 +2407,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-15T20:22:25+00:00"
+            "time": "2026-10-16T15:19:33+00:00"
         },
         {
             "name": "league/uri-interfaces",
-            "version": "7.8.1",
+            "version": "7.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-interfaces.git",
-                "reference": "85d5c77c5d6d3af6c54db4a78246364908f3c928"
+                "reference": "eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/85d5c77c5d6d3af6c54db4a78246364908f3c928",
-                "reference": "85d5c77c5d6d3af6c54db4a78246364908f3c928",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58",
+                "reference": "eb5f6d24e6a4fe0a8e9c78ded4eb1dfff1404f58",
                 "shasum": ""
             },
             "require": {
@@ -2482,7 +2483,7 @@
                 "docs": "https://uri.thephpleague.com",
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri-src/issues",
-                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.8.1"
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.9.0"
             },
             "funding": [
                 {
@@ -2490,7 +2491,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-08T20:05:35+00:00"
+            "time": "2026-10-16T15:19:33+00:00"
         },
         {
             "name": "marc-mabe/php-enum",
