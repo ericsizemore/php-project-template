@@ -16,6 +16,7 @@ namespace Esi\PhpProjectTemplate;
 
 /**
  * @see Tests\PhpProjectTemplateTest
+ *
  * @psalm-immutable
  */
 final class PhpProjectTemplate
