@@ -4113,7 +4113,8 @@
                 "issues": "https://github.com/psalm/psalm-plugin-phpunit/issues",
                 "source": "https://github.com/psalm/psalm-plugin-phpunit/tree/1.0.0"
             },
-            "time": "2026-11-10T13:14:47+00:00"
+            "time": "2026-11-10T13:14:47+00:00",
+            "published-time": "2026-11-10T13:28:40+00:00"
         },
         {
             "name": "psalm/plugin-symfony",
@@ -8540,5 +8541,5 @@
         "php": ">=8.4"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
